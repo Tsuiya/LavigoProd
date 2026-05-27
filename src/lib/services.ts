@@ -29,8 +29,8 @@ export const servicesData: Record<string, ServiceData> = {
     included: [
       "Sessão fotográfica de até 2 horas em local externo ou residencial",
       "Direção de poses leve, afetiva e natural por Daniel & Jaiane",
-      "Disponibilização de 40 fotos digitais cuidadosamente tratadas em alta resolução",
-      "Galeria online privativa para seleção e download, protegida por senha",
+      "Disponibilização de até 60 fotos digitais cuidadosamente tratadas em alta resolução",
+      "Galeria online privativa para seleção e download",
       "Estojo de linho premium personalizado com 10 impressões fine art 15x21cm"
     ],
     process: [
@@ -52,10 +52,9 @@ export const servicesData: Record<string, ServiceData> = {
     detailDescription: "Os primeiros dias de vida de um bebê são repletos de descobertas e mudanças velozes. Nosso registro Newborn é focado no conforto absoluto e na segurança do recém-nascido. Realizado preferencialmente nos primeiros 15 dias de vida, na própria casa da família (estilo home lifestyle), documentamos a rotina natural da chegada do bebê: o aconchego no colo dos pais, os pezinhos enrugados, o sono profundo e os olhares apaixonados da família, sem pressa, no tempo do bebê.",
     coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779837582/newborn_f9lt9a.png", // Unsplash placeholder
     included: [
-      "Sessão residencial (lifestyle) sem limite de tempo rígido (respeitando mamadas e sono)",
+      "Sessão residencial (lifestyle) sem limite de tempo rígido (respeitando amamentação e sono)",
       "Fotografia do bebê individualmente e em interação com os pais e irmãos",
-      "Disponibilização de 35 fotos tratadas digitalmente em alta definição",
-      "Acesso à galeria online exclusiva por 1 ano",
+      "Disponibilização de até 60 fotos tratadas digitalmente em alta definição",
       "Álbum fotográfico em papel fotográfico fosco premium de 20 páginas (15x15cm)"
     ],
     process: [
@@ -78,9 +77,8 @@ export const servicesData: Record<string, ServiceData> = {
     included: [
       "Cobertura de aniversário ou ensaio infantil externo/residencial de até 2 horas",
       "Participação livre dos pais e irmãos nos registros do ensaio",
-      "Disponibilização de 50 fotos digitais tratadas com cor e iluminação suave",
-      "Galeria online exclusiva para download em alta resolução",
-      "Estojo de linho personalizado com pendrive de madeira contendo os arquivos"
+      "Disponibilização de até 60 fotos digitais tratadas com cor e iluminação suave",
+      "Galeria online exclusiva para download em alta resolução"
     ],
     process: [
       { step: "01", title: "Alinhamento", description: "Planejamento do ensaio infantil ou cronograma de fotos do aniversário para garantir conforto." },
@@ -103,10 +101,10 @@ export const servicesData: Record<string, ServiceData> = {
     detailDescription: "Celebrar a conexão entre duas pessoas é uma das nossas maiores inspirações. O Ensaio de Casal (seja para namorados, noivos ou pré-wedding) é conduzido de forma descontraída, como um passeio a dois onde nós registramos os olhares cúmplices, as risadas compartilhadas e os gestos de carinho silenciosos. O resultado é um acervo de imagens sinceras que mostram a essência da parceria de vocês em formato de arte visual.",
     coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779843192/ensaio-casal2_vcear9.png", // Unsplash placeholder
     included: [
-      "Sessão de fotos de 1h30 com troca de figurinos inclusa",
+      "Sessão de fotos de até 1h30 com troca de figurinos inclusa",
       "Locação externa exclusiva (campo, riacho ou ruínas históricas)",
       "Direção e roteiro de interação afetiva",
-      "Disponibilização de 40 fotos digitais tratadas",
+      "Disponibilização de até 60 fotos digitais tratadas",
       "Galeria web privativa para seleção e download rápido"
     ],
     process: [
@@ -135,7 +133,7 @@ export const servicesData: Record<string, ServiceData> = {
     process: [
       { step: "01", title: "Alinhamento", description: "Alinhamos os horários do cartório e a logística do local da recepção." },
       { step: "02", title: "O Registro", description: "Cobertura leve, discreta e focada nos sorrisos sinceros e emoções reais." },
-      { step: "03", title: "Entrega Ágil", description: "Fotos tratadas disponibilizadas de forma digital e impressas no estojo." }
+      { step: "03", title: "Entrega Ágil", description: "Fotos tratadas disponibilizadas de forma digital." }
     ],
     gallery: [
       // Larissa e Rodolfo
@@ -158,10 +156,10 @@ export const servicesData: Record<string, ServiceData> = {
     detailDescription: "Não fazemos apenas vídeos, criamos documentários poéticos da sua união religiosa. Capturamos o som ambiente, os votos trêmulos, as risadas, a música e o silêncio respeitoso da igreja. Daniel & Jaiane utilizam câmeras de cinema para criar um filme que transporta você de volta para o altar toda vez que der o play.",
     coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.4.1_qqlnxs.jpg?_s=public-apps",
     included: [
-      "Cobertura completa do casamento religioso com câmeras de cinema",
+      "Cobertura completa do casamento religioso com câmeras profissionais e storymaker",
       "Captação de áudio profissional dos votos e discursos do altar",
       "Teaser do casamento de 1 minuto para redes sociais",
-      "Filme de casamento cinematográfico de 5 a 8 minutos",
+      "Filme de casamento cinematográfico de 15 a 35 minutos",
       "Disponibilização do link digital em alta definição"
     ],
     process: [

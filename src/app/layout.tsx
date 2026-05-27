@@ -21,6 +21,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lavigo.com.br"),
   title: "Lavigo Studios | Histórias de Amor, Maternidade e Família",
   description: "Produtora boutique premium em Ibitinga, SP. Especializada em fotografia e filmes emocionais de maternidade, casais e família. Registros que atravessam gerações.",
   keywords: "fotografia de familia, fotografo maternidade ibitinga, ensaio gestante sp, newborn premium, filmes de casamento, lavigo producoes, lavigo studios",
@@ -32,6 +33,22 @@ export const metadata: Metadata = {
     siteName: "Lavigo Studios",
     locale: "pt_BR",
     type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Lavigo Studios | Histórias de Amor, Maternidade e Família",
+    description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais e família em Ibitinga, SP.",
+    images: ["/icon.png"],
   },
 };
 

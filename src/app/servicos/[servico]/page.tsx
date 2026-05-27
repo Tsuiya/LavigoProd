@@ -110,7 +110,7 @@ export default async function ServicePage({ params }: RouteParams) {
         />
 
         <div style={{ textAlign: "center", marginTop: "5rem" }}>
-          <Link href="/servicos" className="btn btn-secondary cursor-interactive" style={{ marginRight: "1rem" }}>
+          <Link href="/servicos" className="btn btn-secondary cursor-interactive" style={{ marginRight: "1rem", marginBottom: "1rem" }}>
             ← Voltar para Serviços
           </Link>
           <BookServiceButton serviceId={service.id} label="Reservar este Ensaio" />

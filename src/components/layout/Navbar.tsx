@@ -70,7 +70,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header id="mainHeader" className={isScrolled ? "nav-scrolled" : ""}>
+      <header id="mainHeader" className={`${isScrolled ? "nav-scrolled" : ""} ${isMenuOpen ? "menu-open-header" : ""}`}>
         {/* Progress bar */}
         <div 
           className="nav-progress-bar" 

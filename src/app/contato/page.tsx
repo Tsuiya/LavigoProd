@@ -68,11 +68,11 @@ export default function ContactPage() {
                   E-mail
                 </h4>
                 <a 
-                  href="mailto:contato@lavigo.com.br" 
+                  href="mailto:daniel@lavigo.com.br" 
                   className="cursor-interactive" 
                   style={{ fontSize: "1.2rem", color: "var(--text)", fontWeight: "400", textDecoration: "underline" }}
                 >
-                  contato@lavigo.com.br
+                  daniel@lavigo.com.br
                 </a>
               </div>
 

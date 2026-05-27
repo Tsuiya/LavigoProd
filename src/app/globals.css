@@ -259,9 +259,17 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1010;
   transition: var(--transition-fast);
   border-bottom: 1px solid transparent;
+}
+
+header.menu-open-header {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid transparent !important;
+  box-shadow: none !important;
 }
 
 .nav-scrolled {
@@ -624,6 +632,19 @@ header {
   0% { top: -20px; }
   50% { top: 60px; }
   100% { top: 60px; }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto !important;
+    min-height: 100vh;
+    padding-top: 7.5rem !important;
+    padding-bottom: 5rem !important;
+    overflow: visible !important;
+  }
+  .hero-scroll-indicator {
+    display: none !important;
+  }
 }
 
 #manifesto {

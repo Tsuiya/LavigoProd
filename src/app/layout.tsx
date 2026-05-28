@@ -7,8 +7,6 @@ import Footer from "@/components/layout/Footer";
 import AnalyticsScripts from "@/components/analytics/AnalyticsScripts";
 import RouteTracker from "@/components/analytics/RouteTracker";
 
-// Purely decorative — never needs SSR, deferred to its own split chunk
-const CustomCursor = dynamic(() => import("@/components/ui/CustomCursor"), { ssr: false });
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],

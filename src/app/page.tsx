@@ -19,7 +19,7 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "PhotographyBusiness",
     "name": "Lavigo Studios",
-    "image": "https://res.cloudinary.com/drczznkji/image/upload/v1778903611/Daniel_Jaiane_lxw9w5.png",
+    "image": "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/Daniel_Jaiane_ama6yy.webp",
     "@id": "https://lavigo.com.br/#organization",
     "url": "https://lavigo.com.br",
     "telephone": "+5516991609339",

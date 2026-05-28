@@ -83,7 +83,7 @@ export default function SobreClientPage() {
           </div>
 
           <div className="sobre-img-container reveal d2">
-            <img className="sobre-img" src="https://res.cloudinary.com/drczznkji/image/upload/v1778903611/Daniel_Jaiane_lxw9w5.png" alt="Retrato artístico de Daniel e Jaiane" />
+            <img className="sobre-img" src="https://res.cloudinary.com/drczznkji/image/upload/v1779989913/Daniel_Jaiane_ama6yy.webp" alt="Retrato artístico de Daniel e Jaiane" />
           </div>
         </div>
       </section>

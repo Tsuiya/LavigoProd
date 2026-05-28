@@ -25,7 +25,7 @@ export const servicesData: Record<string, ServiceData> = {
     price: "A partir de R$ 600",
     description: "O momento mais íntimo da transformação. Luz natural, emoção real, memória para sempre.",
     detailDescription: "O ensaio de gestante na Lavigo é pensado como uma celebração íntima e poética da maternidade. Longe de poses artificiais ou estúdios frios, nós fotografamos na luz suave da tarde em um local externo que tenha significado para você, ou no aconchego do seu próprio lar (estilo lifestyle). Direcionamos você de forma afetiva para que se sinta inteiramente confortável, capturando a conexão pura, o toque sutil e o amor que transborda.",
-    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779837828/gestante_w6tgwt.png", // Unsplash placeholder
+    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779989915/gestante_o03lkh.webp", // Unsplash placeholder
     included: [
       "Sessão fotográfica de até 2 horas em local externo ou residencial",
       "Direção de poses leve, afetiva e natural por Daniel & Jaiane",
@@ -39,8 +39,8 @@ export const servicesData: Record<string, ServiceData> = {
       { step: "03", title: "Curadoria & Entrega", description: "Edição autoral em tons quentes e entrega digital e física com acabamento fine art." }
     ],
     gallery: [
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779842420/gestante2_wldhd6.png", alt: "Ensaio Gestante (Referência Visual)" },
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779842420/gestante3_mbrsou.png", alt: "Ensaio Gestante (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/gestante2_mk09tt.webp", alt: "Ensaio Gestante (Referência Visual)" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/gestante3_hbqtzk.webp", alt: "Ensaio Gestante (Referência Visual)" }
     ]
   },
   newborn: {
@@ -50,7 +50,7 @@ export const servicesData: Record<string, ServiceData> = {
     price: "A partir de R$ 700",
     description: "Os primeiros dias. A menor mão. O cheiro que não volta. Registrado com delicadeza absoluta.",
     detailDescription: "Os primeiros dias de vida de um bebê são repletos de descobertas e mudanças velozes. Nosso registro Newborn é focado no conforto absoluto e na segurança do recém-nascido. Realizado preferencialmente nos primeiros 15 dias de vida, na própria casa da família (estilo home lifestyle), documentamos a rotina natural da chegada do bebê: o aconchego no colo dos pais, os pezinhos enrugados, o sono profundo e os olhares apaixonados da família, sem pressa, no tempo do bebê.",
-    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779837582/newborn_f9lt9a.png", // Unsplash placeholder
+    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779989914/newborn_cbzqrb.webp", // Unsplash placeholder
     included: [
       "Sessão residencial (lifestyle) sem limite de tempo rígido (respeitando amamentação e sono)",
       "Fotografia do bebê individualmente e em interação com os pais e irmãos",
@@ -63,7 +63,7 @@ export const servicesData: Record<string, ServiceData> = {
       { step: "03", title: "O Álbum", description: "Curadoria afetiva dos momentos mais doces montados em um livreto especial de memórias." }
     ],
     gallery: [
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779842701/newborn2_gzdwvp.png", alt: "Ensaio Newborn (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779989914/newborn2_flx9ni.webp", alt: "Ensaio Newborn (Referência Visual)" }
     ]
   },
   familia: {
@@ -99,7 +99,7 @@ export const servicesData: Record<string, ServiceData> = {
     price: "A partir de R$ 500",
     description: "Do ensaio íntimo ao pré-wedding. Capturamos a cumplicidade e a sintonia do casal.",
     detailDescription: "Celebrar a conexão entre duas pessoas é uma das nossas maiores inspirações. O Ensaio de Casal (seja para namorados, noivos ou pré-wedding) é conduzido de forma descontraída, como um passeio a dois onde nós registramos os olhares cúmplices, as risadas compartilhadas e os gestos de carinho silenciosos. O resultado é um acervo de imagens sinceras que mostram a essência da parceria de vocês em formato de arte visual.",
-    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779843192/ensaio-casal2_vcear9.png", // Unsplash placeholder
+    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779989914/ensaio-casal1_njfnqz.webp", // Unsplash placeholder
     included: [
       "Sessão de fotos de até 1h30 com troca de figurinos inclusa",
       "Locação externa exclusiva (campo, riacho ou ruínas históricas)",
@@ -113,7 +113,7 @@ export const servicesData: Record<string, ServiceData> = {
       { step: "03", title: "Revelação Digital", description: "Envio das fotos com tratamento de luz e cor cinematográfico quente." }
     ],
     gallery: [
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779843192/ensaio-casal1_hlhude.png", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/ensaio-casal2_nljlor.webp", alt: "Ensaio de Casal (Referência Visual)" }
     ]
   },
   casamentos: {
@@ -154,7 +154,7 @@ export const servicesData: Record<string, ServiceData> = {
     price: "A partir de R$ 2500",
     description: "Narrativa audiovisual de casamentos religiosos, editada com intenção cinematográfica.",
     detailDescription: "Não fazemos apenas vídeos, criamos documentários poéticos da sua união religiosa. Capturamos o som ambiente, os votos trêmulos, as risadas, a música e o silêncio respeitoso da igreja. Daniel & Jaiane utilizam câmeras de cinema para criar um filme que transporta você de volta para o altar toda vez que der o play.",
-    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.4.1_qqlnxs.jpg?_s=public-apps",
+    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.4.1_kwtaxz.webp",
     included: [
       "Cobertura completa do casamento religioso com câmeras profissionais e storymaker",
       "Captação de áudio profissional dos votos e discursos do altar",
@@ -168,10 +168,10 @@ export const servicesData: Record<string, ServiceData> = {
       { step: "03", title: "Edição e Cor", description: "Colorização e sincronização da trilha sonora para evocar a emoção vivida." }
     ],
     gallery: [
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.2.2_pbxpfm.jpg?_s=public-apps", alt: "Filme Religioso Camila e Sidney - Preparação" },
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.4.1_qqlnxs.jpg?_s=public-apps", alt: "Filme Religioso Camila e Sidney - Altar" },
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602020/Still_2026-03-07_154153_2.8.1_qvotkj.jpg?_s=public-apps", alt: "Filme Religioso Camila e Sidney - Aliança" },
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602021/Still_2026-03-07_154153_2.7.1_sxqsyv.jpg?_s=public-apps", alt: "Filme Religioso Camila e Sidney - O beijo" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990403/Still_2026-03-07_154153_2.2.2_iabvav.webp", alt: "Filme Religioso Camila e Sidney - Preparação" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.4.1_kwtaxz.webp", alt: "Filme Religioso Camila e Sidney - Altar" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990403/Still_2026-03-07_154153_2.8.1_b5otza.webp", alt: "Filme Religioso Camila e Sidney - Aliança" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.7.1_bwdgoj.webp", alt: "Filme Religioso Camila e Sidney - O beijo" }
     ]
   }
 };

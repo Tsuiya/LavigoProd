@@ -2,8 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-import ContactForm from "../ui/ContactForm";
+
+// Only rendered inside a modal after user interaction
+const ContactForm = dynamic(() => import("../ui/ContactForm"), { ssr: false });
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,19 +18,25 @@ export default function Navbar() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Nav scroll blur state
-      if (window.scrollY > 60) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+    let rafId: number | null = null;
 
-      // Reading progress bar
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight > 0) {
-        setScrollProgress((window.scrollY / docHeight) * 100);
-      }
+    const handleScroll = () => {
+      if (rafId !== null) return; // already scheduled
+      rafId = requestAnimationFrame(() => {
+        rafId = null;
+        // Nav scroll blur state
+        if (window.scrollY > 60) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+
+        // Reading progress bar (read scrollHeight once per frame)
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight > 0) {
+          setScrollProgress((window.scrollY / docHeight) * 100);
+        }
+      });
     };
 
     // Listen to global open contact modal event

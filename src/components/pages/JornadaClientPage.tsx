@@ -52,7 +52,7 @@ export default function JornadaClientPage() {
           <div className="sobre-img-container" style={{ paddingTop: "100%" }}>
             <img 
               className="sobre-img" 
-              src="https://res.cloudinary.com/drczznkji/image/upload/v1778606157/Still_2026-05-12_141454_1.1.1_tavxdp.jpg?_s=public-apps" 
+              src="https://res.cloudinary.com/drczznkji/image/upload/v1779991174/%C3%A1lbum-linho_bxg938.webp" 
               alt="Caixas e impressões de fotos em madeira e linho" 
             />
           </div>

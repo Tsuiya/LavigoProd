@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import JourneyTimeline from "@/components/sections/JourneyTimeline";
 import GalleryPreview from "@/components/sections/GalleryPreview";
@@ -112,12 +113,15 @@ export default function HomeClientPage() {
         <div className="services-grid">
           <article className="service-card reveal d1">
             <div className="service-img-wrapper">
-              <div 
-                className="service-img-placeholder" 
-                style={{ backgroundImage: "url('https://res.cloudinary.com/drczznkji/image/upload/v1779837828/gestante_w6tgwt.png')" }} 
-                role="img" 
-                aria-label="Foto artística de gestante em luz natural"
-              ></div>
+              <div className="service-img-placeholder">
+                <Image
+                  fill
+                  src="https://res.cloudinary.com/drczznkji/image/upload/v1779989915/gestante_o03lkh.webp"
+                  alt="Foto artística de gestante em luz natural"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
               <div className="service-img-overlay"></div>
               <span className="service-tag">Maternidade · Core</span>
             </div>
@@ -138,12 +142,15 @@ export default function HomeClientPage() {
 
           <article className="service-card reveal d2">
             <div className="service-img-wrapper">
-              <div 
-                className="service-img-placeholder" 
-                style={{ backgroundImage: "url('https://res.cloudinary.com/drczznkji/image/upload/v1779837582/newborn_f9lt9a.png')" }} 
-                role="img" 
-                aria-label="Detalhe dos pés de um bebê recém-nascido"
-              ></div>
+              <div className="service-img-placeholder">
+                <Image
+                  fill
+                  src="https://res.cloudinary.com/drczznkji/image/upload/v1779989914/newborn_cbzqrb.webp"
+                  alt="Detalhe dos pés de um bebê recém-nascido"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
               <div className="service-img-overlay"></div>
               <span className="service-tag">Maternidade · Core</span>
             </div>
@@ -164,12 +171,15 @@ export default function HomeClientPage() {
 
           <article className="service-card reveal d3">
             <div className="service-img-wrapper">
-              <div 
-                className="service-img-placeholder" 
-                style={{ backgroundImage: "url('https://res.cloudinary.com/drczznkji/image/upload/v1778605998/Luisa_2anos_jeblpm.jpg?_s=public-apps')" }} 
-                role="img" 
-                aria-label="Retrato de família sorrindo em um campo dourado"
-              ></div>
+              <div className="service-img-placeholder">
+                <Image
+                  fill
+                  src="https://res.cloudinary.com/drczznkji/image/upload/v1778605998/Luisa_2anos_jeblpm.jpg"
+                  alt="Retrato de família sorrindo em um campo dourado"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
               <div className="service-img-overlay"></div>
               <span className="service-tag">Família · Core</span>
             </div>
@@ -285,7 +295,15 @@ export default function HomeClientPage() {
           </div>
 
           <div className="sobre-img-container reveal d2">
-            <img className="sobre-img" src="https://res.cloudinary.com/drczznkji/image/upload/v1778903611/Daniel_Jaiane_lxw9w5.png" alt="Retrato artístico de Daniel e Jaiane, fundadores da Lavigo Studios" />
+            <Image
+              className="sobre-img"
+              src="https://res.cloudinary.com/drczznkji/image/upload/v1779989913/Daniel_Jaiane_ama6yy.webp"
+              alt="Retrato artístico de Daniel e Jaiane, fundadores da Lavigo Studios"
+              width={560}
+              height={700}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
           </div>
         </div>
       </section>

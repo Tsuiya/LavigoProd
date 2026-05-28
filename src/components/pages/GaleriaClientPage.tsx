@@ -67,28 +67,28 @@ const portfolioPhotos: PortfolioPhoto[] = [
 
   // Casamento Religioso - Camila e Sidney
   {
-    src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.2.2_pbxpfm.jpg",
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990403/Still_2026-03-07_154153_2.2.2_iabvav.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
     title: "Olhar do Altar",
     alt: "Still de filme do casamento de Camila e Sidney no altar de igreja"
   },
   {
-    src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602019/Still_2026-03-07_154153_2.4.1_qqlnxs.jpg",
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.4.1_kwtaxz.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
     title: "O Sim",
     alt: "Still cinematográfico de Camila e Sidney se unindo no altar em cerimônia premium"
   },
   {
-    src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602020/Still_2026-03-07_154153_2.8.1_qvotkj.jpg",
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990403/Still_2026-03-07_154153_2.8.1_b5otza.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
     title: "As Alianças",
     alt: "Troca de alianças sob luz poética da igreja no interior de SP"
   },
   {
-    src: "https://res.cloudinary.com/drczznkji/image/upload/v1778602021/Still_2026-03-07_154153_2.7.1_sxqsyv.jpg",
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.7.1_bwdgoj.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
     title: "A Saída dos Noivos",

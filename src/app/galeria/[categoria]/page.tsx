@@ -20,9 +20,21 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
 
   const service = servicesData[serviceKey];
   if (!service) return {};
+
+  const formattedTitle = `Galeria ${service.title} | Lavigo Studios`;
+  const formattedDesc = `Confira nosso portfólio real e fotos de ${service.title.toLowerCase()} em Ibitinga, Araraquara, Bauru, Jaú e região. Registros que atravessam gerações.`;
+  const customKeywords = `fotos ${categoria} ibitinga, galeria ${service.id} jau, fotos ${service.id} bauru, ${service.id} araraquara, lavigo studios`;
+
   return {
-    title: `Galeria ${service.title} | Lavigo Studios`,
-    description: `Amostra de registros fotográficos da categoria ${service.title} por Lavigo Studios.`,
+    title: formattedTitle,
+    description: formattedDesc,
+    keywords: customKeywords,
+    openGraph: {
+      title: formattedTitle,
+      description: formattedDesc,
+      url: `https://lavigo.com.br/galeria/${categoria}`,
+      type: "website",
+    }
   };
 }
 
@@ -41,8 +53,26 @@ export default async function CategoryGalleryPage({ params }: RouteParams) {
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `Galeria de ${service.title} | Lavigo Studios`,
+    "description": `Portfólio com mostras de ${service.title.toLowerCase()} registrados sob luz natural e com direção afetiva no interior paulista.`,
+    "url": `https://lavigo.com.br/galeria/${categoria}`,
+    "provider": {
+      "@type": "PhotographyBusiness",
+      "name": "Lavigo Studios",
+      "url": "https://lavigo.com.br"
+    }
+  };
+
   return (
-    <main style={{ paddingTop: "8rem" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main style={{ paddingTop: "8rem" }}>
       {/* Page Hero */}
       <section className="page-hero">
         <span className="section-label">Galeria Privada</span>
@@ -71,5 +101,6 @@ export default async function CategoryGalleryPage({ params }: RouteParams) {
         </div>
       </section>
     </main>
+    </>
   );
 }

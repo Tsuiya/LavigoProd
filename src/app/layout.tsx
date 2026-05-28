@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
+import AnalyticsScripts from "@/components/analytics/AnalyticsScripts";
+import RouteTracker from "@/components/analytics/RouteTracker";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -22,13 +24,13 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lavigo.com.br"),
-  title: "Lavigo Studios | Histórias de Amor, Maternidade e Família",
-  description: "Produtora boutique premium em Ibitinga, SP. Especializada em fotografia e filmes emocionais de maternidade, casais e família. Registros que atravessam gerações.",
-  keywords: "fotografia de familia, fotografo maternidade ibitinga, ensaio gestante sp, newborn premium, filmes de casamento, lavigo producoes, lavigo studios",
+  title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família",
+  description: "Produtora boutique premium de fotografia e filmes artísticos em Ibitinga, SP. Especializada em ensaio gestante, newborn, família e casamentos. Atendemos Araraquara, Bauru, Jaú, São Carlos, Ribeirão Preto, Matão, Borborema, Itápolis, Tabatinga e região. Registros que atravessam gerações.",
+  keywords: "fotografia de familia, fotografo maternidade ibitinga, ensaio gestante sp, newborn premium, filmes de casamento, lavigo producoes, lavigo studios, fotografo de casamento ibitinga, video de casamento ibitinga, ensaio de casal, fotografia araraquara, fotografo bauru, fotografo jau, fotografo sao carlos, fotografia ribeirao preto, ensaio gestante jau, newborn bauru, video de casamento jau, produtor de video ibitinga, fotografo itapolis, ensaio gestante matao, fotografo tabatinga",
   authors: [{ name: "Lavigo Studios" }],
   openGraph: {
-    title: "Lavigo Studios | Histórias de Amor, Maternidade e Família",
-    description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais e família em Ibitinga, SP.",
+    title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família",
+    description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais, família e casamentos em Ibitinga, Bauru, Jaú, Araraquara, São Carlos, Ribeirão Preto e região.",
     url: "https://lavigo.com.br",
     siteName: "Lavigo Studios",
     locale: "pt_BR",
@@ -46,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Lavigo Studios | Histórias de Amor, Maternidade e Família",
-    description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais e família em Ibitinga, SP.",
+    title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família",
+    description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais, família e casamentos no interior paulista.",
     images: ["/icon.png"],
   },
 };
@@ -60,6 +62,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${cormorant.variable} ${outfit.variable}`}>
       <body>
+        <AnalyticsScripts />
+        <RouteTracker />
 
         {/* SVG film grain overlay filter */}
         <svg 

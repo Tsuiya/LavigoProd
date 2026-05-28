@@ -14,9 +14,21 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
   const { servico } = await params;
   const service = servicesData[servico];
   if (!service) return {};
+
+  const formattedTitle = `${service.title} | Fotografia e Filmes | Lavigo Studios`;
+  const formattedDesc = `${service.description} Registros afetivos em Ibitinga, Araraquara, Bauru, Jaú, São Carlos e Matão. Direção leve e natural por Daniel & Jaiane.`;
+  const customKeywords = `${service.title.toLowerCase()} ibitinga, ensaio ${service.id} jau, fotos ${service.id} bauru, ${service.id} araraquara, fotografo sao carlos, lavigo studios, produtor de video ibitinga`;
+
   return {
-    title: `${service.title} | Serviços | Lavigo Studios`,
-    description: service.description,
+    title: formattedTitle,
+    description: formattedDesc,
+    keywords: customKeywords,
+    openGraph: {
+      title: formattedTitle,
+      description: formattedDesc,
+      url: `https://lavigo.com.br/servicos/${servico}`,
+      type: "website",
+    }
   };
 }
 
@@ -28,8 +40,39 @@ export default async function ServicePage({ params }: RouteParams) {
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service.title,
+    "description": service.detailDescription,
+    "provider": {
+      "@type": "PhotographyBusiness",
+      "name": "Lavigo Studios",
+      "url": "https://lavigo.com.br"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Ibitinga" },
+      { "@type": "AdministrativeArea", "name": "Araraquara" },
+      { "@type": "AdministrativeArea", "name": "Bauru" },
+      { "@type": "AdministrativeArea", "name": "Jaú" },
+      { "@type": "AdministrativeArea", "name": "São Carlos" },
+      { "@type": "AdministrativeArea", "name": "Ribeirão Preto" },
+      { "@type": "AdministrativeArea", "name": "Matão" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": service.price.replace(/[^0-9]/g, ""),
+      "priceCurrency": "BRL"
+    }
+  };
+
   return (
-    <main style={{ paddingTop: "8rem" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main style={{ paddingTop: "8rem" }}>
       {/* Editorial Page Hero */}
       <section className="page-hero">
         <span className="section-label">{service.tag}</span>
@@ -117,5 +160,6 @@ export default async function ServicePage({ params }: RouteParams) {
         </div>
       </section>
     </main>
+    </>
   );
 }

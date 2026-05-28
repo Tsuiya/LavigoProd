@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { trackBookServiceClick } from "@/lib/analytics";
 
 interface BookServiceButtonProps {
   serviceId: string;
@@ -15,6 +16,7 @@ export default function BookServiceButton({
 }: BookServiceButtonProps) {
   
   const handleOpenContact = () => {
+    trackBookServiceClick(serviceId, label);
     window.dispatchEvent(
       new CustomEvent("open-contact-modal", { detail: { service: serviceId } })
     );

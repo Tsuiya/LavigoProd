@@ -21,12 +21,6 @@ const milestones: Milestone[] = [
 export default function JourneyTimeline() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleOpenContact = (service: string) => {
-    window.dispatchEvent(
-      new CustomEvent("open-contact-modal", { detail: { service } })
-    );
-  };
-
   return (
     <div className="reveal d1">
       <div className="timeline-wrapper">

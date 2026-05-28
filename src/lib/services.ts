@@ -120,15 +120,15 @@ export const servicesData: Record<string, ServiceData> = {
     id: "casamentos",
     title: "Casamentos Civis",
     tag: "Casamentos",
-    price: "A partir de R$ 500",
+    price: "A partir de R$ 650",
     description: "Cobertura de casamentos civis intimistas, espontâneos e repletos de verdade.",
     detailDescription: "O casamento civil é cercado de intimidade e emoção genuína. Focamos em registrar a preparação, a cerimônia no cartório e a celebração íntima que se segue (almoço ou recepção familiar). Daniel & Jaiane capturam com naturalidade as trocas de olhares, o nervosismo feliz da assinatura e o abraço apertado das testemunhas de forma inteiramente documental.",
     coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1776972857/LR-1_schl7z.jpg?_s=public-apps",
     included: [
       "Cobertura fotográfica do cartório civil e celebração íntima subsequente",
-      "Disponibilização de até 200 fotos curadas e tratadas de forma autoral",
-      "Acesso à galeria online protegida por senha para download e compartilhamento familiar",
-      "Estojo revestido em linho com ampliações fine art"
+      "Disponibilização de até 100 fotos curadas e tratadas de forma autoral",
+      "Acesso à galeria online para download e compartilhamento familiar",
+      "Álbum 15x21 revestido em linho com ampliações fine art"
     ],
     process: [
       { step: "01", title: "Alinhamento", description: "Alinhamos os horários do cartório e a logística do local da recepção." },

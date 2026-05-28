@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
+import { trackViewPortfolioItem } from "@/lib/analytics";
 
 interface LightboxImage {
   src: string;
   alt: string;
   tag?: string;
   title?: string;
+  category?: string;
 }
 
 interface LightboxProps {
@@ -33,6 +35,36 @@ export default function Lightbox({
     return () => setMounted(false);
   }, []);
 
+  const handlePrev = useCallback(() => {
+    if (transitioning) return;
+    setTransitioning(true);
+    setTimeout(() => {
+      onIndexChange((currentIndex - 1 + images.length) % images.length);
+      setTransitioning(false);
+    }, 200);
+  }, [transitioning, currentIndex, images.length, onIndexChange]);
+
+  const handleNext = useCallback(() => {
+    if (transitioning) return;
+    setTransitioning(true);
+    setTimeout(() => {
+      onIndexChange((currentIndex + 1) % images.length);
+      setTransitioning(false);
+    }, 200);
+  }, [transitioning, currentIndex, images.length, onIndexChange]);
+
+  // Track photo views in analytics
+  useEffect(() => {
+    if (isOpen && images.length > 0 && currentIndex >= 0 && currentIndex < images.length) {
+      const currentImage = images[currentIndex];
+      trackViewPortfolioItem(
+        currentImage.src, 
+        currentImage.title || currentImage.alt, 
+        currentImage.category || "portfolio"
+      );
+    }
+  }, [isOpen, currentIndex, images]);
+
   useEffect(() => {
     if (!isOpen) return;
 
@@ -49,25 +81,7 @@ export default function Lightbox({
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "auto";
     };
-  }, [isOpen, currentIndex, images]);
-
-  const handlePrev = () => {
-    if (transitioning) return;
-    setTransitioning(true);
-    setTimeout(() => {
-      onIndexChange((currentIndex - 1 + images.length) % images.length);
-      setTransitioning(false);
-    }, 200);
-  };
-
-  const handleNext = () => {
-    if (transitioning) return;
-    setTransitioning(true);
-    setTimeout(() => {
-      onIndexChange((currentIndex + 1) % images.length);
-      setTransitioning(false);
-    }, 200);
-  };
+  }, [isOpen, onClose, handleNext, handlePrev]);
 
   if (!isOpen || !images.length || !mounted) return null;
 

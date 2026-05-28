@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { trackContactFormSubmit } from "@/lib/analytics";
 
 interface ContactFormProps {
   initialService?: string;
@@ -49,6 +50,9 @@ Gostaria de agendar uma conversa sobre nossos registros emocionais na Lavigo Stu
 
     const encodedMsg = encodeURIComponent(messageText);
     const whatsappURL = `https://wa.me/5516991609339?text=${encodedMsg}`;
+
+    // Track lead generation event in Data Layer
+    trackContactFormSubmit(service, date || "Não informada", name);
 
     // Open WA window
     window.open(whatsappURL, "_blank");

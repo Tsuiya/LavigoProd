@@ -8,7 +8,7 @@ export default function AnalyticsScripts() {
   const gaId = "G-52202Y30RV";
   const pixelId = "1178074496288870";
   const clarityId = 'wo1dxichdw';
-  const adsId = 'AW-9890638758';
+  const adsId = 'AW-17438479743';
 
   useEffect(() => {
     // Initialize dataLayer immediately on the client side

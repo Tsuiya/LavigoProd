@@ -6,6 +6,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AnalyticsScripts from "@/components/analytics/AnalyticsScripts";
 import RouteTracker from "@/components/analytics/RouteTracker";
+import WhatsAppButton from "@/components/ui/WhatsappButton";
+import { Analytics } from "@vercel/analytics/next"
 
 
 const cormorant = Cormorant_Garamond({
@@ -64,6 +66,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${cormorant.variable} ${outfit.variable}`}>
       <body>
         <AnalyticsScripts />
+        <Analytics />
         <RouteTracker />
 
         {/* SVG film grain overlay filter */}
@@ -76,6 +79,10 @@ export default function RootLayout({
             <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.035 0" />
           </filter>
         </svg>
+        <WhatsAppButton
+          phone="16991609339"
+          message="Olá! Vim pelo site e gostaria de saber mais."
+        />
 
         <Navbar />
         {children}

@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function AnalyticsScripts() {
   const gtmId = "GTM-TLZDFKDF";
@@ -9,6 +10,7 @@ export default function AnalyticsScripts() {
   const pixelId = "1178074496288870";
   const clarityId = 'wo1dxichdw';
   const adsId = 'AW-17438479743';
+  <Analytics />
 
   useEffect(() => {
     // Initialize dataLayer immediately on the client side

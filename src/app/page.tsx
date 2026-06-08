@@ -33,7 +33,7 @@ export default function Page() {
         "email": "daniel@lavigo.com.br",
         "priceRange": "$$$",
         "currenciesAccepted": "BRL",
-        "paymentAccepted": "Pix, Cartão de Crédito, Transferência Bancária",
+        "paymentAccepted": "Pix, Cartão de Crédito, Transferência Bancária, Dinheiro",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Rua José de Biazi, 893",
@@ -76,7 +76,7 @@ export default function Page() {
           { "@type": "City", "name": "Nova Europa" },
           { "@type": "City", "name": "Gavião Peixoto" }
         ],
-        "description": "Produtora boutique premium de fotografia e filmes no interior paulista. Especializada em ensaio gestante, newborn, família e casamentos civis e religiosos em Ibitinga, Araraquara, Bauru, Jaú e região.",
+        "description": "Estúdio de fotografia e filmes no interior paulista. Especializado em ensaio gestante, newborn, família e casamentos civis e religiosos em Ibitinga, Araraquara, Bauru, Jaú e região.",
         "knowsAbout": [
           "Fotografia de Casamento",
           "Filme de Casamento",
@@ -144,7 +144,7 @@ export default function Page() {
             "name": "Vocês trabalham com vídeo de casamento, cinegrafista e videomaker na região?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim! Além da fotografia, somos videomakers e cinegrafistas especializados em filmes de casamento em Ibitinga, Itápolis, Araraquara, Bauru, Jaú e demais cidades da região. Criamos documentários cinematográficos e teasers poéticos da sua cerimônia."
+              "text": "Sim! Além da fotografia, somos videomakers e cinegrafistas especializados em filmes de casamento em Ibitinga, Itápolis, Araraquara, Bauru, Jaú e demais cidades da região. Criamos documentários cinematográficos e teasers dinâmicos da sua cerimônia."
             }
           },
           {

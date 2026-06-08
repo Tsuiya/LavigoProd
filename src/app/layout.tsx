@@ -27,10 +27,33 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lavigo.com.br"),
-  title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família",
+  title: {
+    default: "Lavigo Studios | Fotógrafo em Ibitinga SP | Fotografia e Filmes de Casamento, Maternidade e Família",
+    template: "%s | Lavigo Studios",
+  },
   description: "Produtora boutique premium de fotografia e filmes artísticos em Ibitinga, SP. Especializada em ensaio gestante, newborn, família e casamentos. Atendemos Araraquara, Bauru, Jaú, São Carlos, Ribeirão Preto, Matão, Borborema, Itápolis, Tabatinga e região. Registros que atravessam gerações.",
   keywords: "fotografia de familia, fotografo maternidade ibitinga, ensaio gestante sp, newborn premium, filmes de casamento, lavigo producoes, lavigo studios, fotografo de casamento ibitinga, video de casamento ibitinga, ensaio de casal, fotografia araraquara, fotografo bauru, fotografo jau, fotografo sao carlos, fotografia ribeirao preto, ensaio gestante jau, newborn bauru, video de casamento jau, produtor de video ibitinga, fotografo itapolis, ensaio gestante matao, fotografo tabatinga",
-  authors: [{ name: "Lavigo Studios" }],
+  authors: [{ name: "Lavigo Studios", url: "https://lavigo.com.br" }],
+  creator: "Daniel & Jaiane — Lavigo Studios",
+  publisher: "Lavigo Studios",
+  category: "Fotografia e Audiovisual",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://lavigo.com.br",
+    languages: {
+      "pt-BR": "https://lavigo.com.br",
+    },
+  },
   openGraph: {
     title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família",
     description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais, família e casamentos em Ibitinga, Bauru, Jaú, Araraquara, São Carlos, Ribeirão Preto e região.",
@@ -38,6 +61,14 @@ export const metadata: Metadata = {
     siteName: "Lavigo Studios",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/Daniel_Jaiane_ama6yy.webp",
+        width: 1200,
+        height: 630,
+        alt: "Daniel e Jaiane — Lavigo Studios | Fotografia e Filmes em Ibitinga, SP",
+      },
+    ],
   },
   icons: {
     icon: [
@@ -50,10 +81,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família",
     description: "Registros emocionais e cinematográficos que atravessam gerações. Maternidade, casais, família e casamentos no interior paulista.",
-    images: ["/icon.png"],
+    images: ["https://res.cloudinary.com/drczznkji/image/upload/v1779989913/Daniel_Jaiane_ama6yy.webp"],
   },
 };
 

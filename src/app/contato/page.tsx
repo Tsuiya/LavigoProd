@@ -29,8 +29,10 @@ export default function Page() {
       "email": "daniel@lavigo.com.br",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Rua José de Biazi, 893",
         "addressLocality": "Ibitinga",
         "addressRegion": "SP",
+        "postalCode": "14945-132",
         "addressCountry": "BR"
       }
     }

@@ -74,31 +74,41 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div itemScope itemType="https://schema.org/LocalBusiness">
+          <meta itemProp="name" content="Lavigo Studios" />
+          <meta itemProp="url" content="https://lavigo.com.br" />
           <h3 className="footer-col-title">Contato</h3>
-          <div className="footer-info-item">
-            Whatsapp:{" "}
-            <a 
-              href="https://wa.me/5516991609339" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="cursor-interactive"
-            >
-              16 99160-9339
-            </a>
-          </div>
-          <div className="footer-info-item">
-            Redes:{" "}
-            <a 
-              href="https://instagram.com/lavigoprod" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="cursor-interactive"
-            >
-              @lavigoprod
-            </a>
-          </div>
-          <div className="footer-info-item">Ibitinga, SP - Brasil</div>
+          <address style={{ fontStyle: "normal" }}>
+            <div className="footer-info-item" itemProp="telephone">
+              Whatsapp:{" "}
+              <a
+                href="https://wa.me/5516991609339"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-interactive"
+              >
+                (16) 99160-9339
+              </a>
+            </div>
+            <div className="footer-info-item" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+              <span itemProp="streetAddress">Rua José de Biazi, 893</span>{" — "}
+              <span itemProp="addressLocality">Ibitinga</span>,{" "}
+              <span itemProp="addressRegion">SP</span>{" "}
+              <span itemProp="postalCode">14945-132</span>
+            </div>
+            <div className="footer-info-item">
+              Redes:{" "}
+              <a
+                href="https://instagram.com/lavigoprod"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-interactive"
+                itemProp="sameAs"
+              >
+                @lavigoprod
+              </a>
+            </div>
+          </address>
         </div>
       </div>
 

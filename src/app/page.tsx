@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import HomeClientPage from "@/components/pages/HomeClientPage";
 
 export const metadata: Metadata = {
-  title: "Lavigo Studios | Fotógrafo em Ibitinga SP | Fotografia e Filmes de Família, Maternidade e Casamento",
-  description: "Produtora boutique premium de fotografia e filmes artísticos em Ibitinga, SP. Especializada em ensaio gestante, newborn, casais, aniversários e casamentos. Atendendo Bauru, Jaú, Araraquara, São Carlos e região.",
-  keywords: "fotografo ibitinga, fotografia de familia ibitinga, ensaio gestante ibitinga, newborn ibitinga, filmes de casamento ibitinga, fotografo araraquara, fotografo bauru, fotografo jau, fotografo sao carlos, ensaio gestante jau, newborn bauru, video de casamento jau, produtor de video ibitinga, ensaio de casal sp",
+  title: "Lavigo Studios | Fotógrafo e Cinegrafista em Ibitinga e Itápolis SP",
+  description: "Estúdio fotográfico boutique especializado em fotografia e filmes de casamento, gestante, newborn e família. Fotógrafo, videomaker e cinegrafista em Ibitinga, Itápolis e região (Araraquara, Bauru, Jaú, São Carlos).",
+  keywords: "fotógrafo ibitinga, fotógrafo itápolis, fotógrafo em ibitinga, fotógrafo em itápolis, cinegrafista ibitinga, cinegrafista itápolis, cinegrafista em ibitinga, cinegrafista em itápolis, videomaker ibitinga, videomaker itápolis, estúdio fotográfico ibitinga, estúdio fotográfico itápolis, fotógrafo de casamento ibitinga, cinegrafista de casamento itápolis, videomaker de casamento ibitinga, ensaio gestante ibitinga, newborn itápolis, fotografia de família, lavigo studios, lavigo produções",
   openGraph: {
-    title: "Lavigo Studios | Fotografia e Filmes de Casamento, Maternidade e Família em Ibitinga e Região",
-    description: "Registros poéticos sob luz natural. Maternidade, casais, família e casamentos no interior paulista (Ibitinga, Araraquara, Bauru, Jaú, São Carlos e Matão).",
+    title: "Lavigo Studios | Fotografia e Filmes em Ibitinga, Itápolis e Região",
+    description: "Registros poéticos sob luz natural. Maternidade, casais, família e casamentos no interior paulista (Ibitinga, Itápolis, Araraquara, Bauru, Jaú, São Carlos e Matão).",
     url: "https://lavigo.com.br",
     type: "website",
   }
@@ -118,7 +118,7 @@ export default function Page() {
         "@type": "WebPage",
         "@id": "https://lavigo.com.br/#webpage",
         "url": "https://lavigo.com.br",
-        "name": "Lavigo Studios | Fotógrafo em Ibitinga SP | Fotografia e Filmes de Família, Maternidade e Casamento",
+        "name": "Lavigo Studios | Fotógrafo e Cinegrafista em Ibitinga e Itápolis SP",
         "isPartOf": { "@id": "https://lavigo.com.br/#website" },
         "about": { "@id": "https://lavigo.com.br/#organization" },
         "primaryImageOfPage": {
@@ -126,6 +126,44 @@ export default function Page() {
           "url": "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/Daniel_Jaiane_ama6yy.webp"
         },
         "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://lavigo.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Onde encontrar um estúdio fotográfico ou fotógrafo em Ibitinga e Itápolis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se você busca um estúdio fotográfico ou fotógrafo em Ibitinga, Itápolis e região, a Lavigo Studios oferece atendimento personalizado de forma externa ou lifestyle no aconchego do seu lar. Especializados em ensaios gestante, newborn e de família, levamos toda a sensibilidade e direção afetiva até você."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês trabalham com vídeo de casamento, cinegrafista e videomaker na região?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Além da fotografia, somos videomakers e cinegrafistas especializados em filmes de casamento em Ibitinga, Itápolis, Araraquara, Bauru, Jaú e demais cidades da região. Criamos documentários cinematográficos e teasers poéticos da sua cerimônia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o ensaio gestante e newborn da Lavigo em Itápolis e Ibitinga?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nossos ensaios de maternidade são feitos com luz natural e foco no afeto real. O ensaio gestante pode ser realizado em locações externas na região de Ibitinga e Itápolis ou em estilo lifestyle na sua própria casa. Já a fotografia newborn é realizada exclusivamente de forma residencial (home lifestyle), respeitando o ritmo e a segurança do bebê."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como solicitar um orçamento de fotografia e vídeo de casamento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para receber uma proposta personalizada para seu casamento, ensaio de casal, gestante, newborn ou infantil, entre em contato conosco pelo WhatsApp ou através de nossa página de contato. Atendemos ativamente noivas e famílias em todo o interior paulista, incluindo Borborema, Tabatinga, Matão e São Carlos."
+            }
+          }
+        ]
       }
     ]
   };

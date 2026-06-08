@@ -4,11 +4,11 @@ import ContatoClientPage from "@/components/pages/ContatoClientPage";
 
 export const metadata: Metadata = {
   title: "Contato | Agende seu Ensaio ou Filme | Lavigo Studios",
-  description: "Entre em contato com a Lavigo Studios. Agende sessões fotográficas e produções de filmes de casamento, gestante ou newborn em Ibitinga, Araraquara, Bauru, Jaú e região.",
-  keywords: "contato lavigo, agendar fotografo ibitinga, whatsapp fotografo ibitinga, ensaio gestante ibitinga, fotos newborn jau, orcamento casamento bauru",
+  description: "Entre em contato com a Lavigo Studios. Agende sessões fotográficas e produções de filmes de casamento, gestante ou newborn em Ibitinga, Itápolis, Araraquara, Bauru, Jaú e região.",
+  keywords: "contato lavigo, fotógrafo ibitinga, fotógrafo itápolis, cinegrafista ibitinga, cinegrafista itápolis, videomaker ibitinga, videomaker itápolis, estúdio fotográfico ibitinga, estúdio fotográfico itápolis, agendar ensaio gestante itápolis, newborn ibitinga, orçamento de casamento",
   openGraph: {
     title: "Entre em contato | Lavigo Studios",
-    description: "Agende sua sessão de fotos ou filme de casamento com Daniel & Jaiane no interior paulista.",
+    description: "Agende seu ensaio ou filme de casamento com Daniel & Jaiane em Ibitinga, Itápolis e toda a região.",
     url: "https://lavigo.com.br/contato",
     type: "website",
   }

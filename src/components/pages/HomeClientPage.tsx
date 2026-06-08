@@ -1,12 +1,41 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import JourneyTimeline from "@/components/sections/JourneyTimeline";
 import GalleryPreview from "@/components/sections/GalleryPreview";
 
+interface FAQItem {
+  q: string;
+  a: string;
+}
+
+const homeFaqs: FAQItem[] = [
+  {
+    q: "Onde encontrar um estúdio fotográfico ou fotógrafo em Ibitinga e Itápolis?",
+    a: "Se você busca um estúdio fotográfico ou fotógrafo em Ibitinga, Itápolis e região, a Lavigo Studios oferece atendimento personalizado de forma externa ou lifestyle no aconchego do seu lar. Especializados em ensaios gestante, newborn e de família, levamos toda a sensibilidade e direção afetiva até você, sem a rigidez de um estúdio tradicional."
+  },
+  {
+    q: "Vocês trabalham com vídeo de casamento, cinegrafista e videomaker na região?",
+    a: "Sim! Além da fotografia, somos videomakers e cinegrafistas especializados em filmes de casamento em Ibitinga, Itápolis, Araraquara, Bauru, Jaú e demais cidades da região. Criamos documentários cinematográficos e teasers poéticos da sua cerimônia (seja civil ou religiosa) para que você possa reviver cada emoção."
+  },
+  {
+    q: "Como funciona o ensaio gestante e newborn da Lavigo em Itápolis e Ibitinga?",
+    a: "Nossos ensaios de maternidade são feitos com luz natural e foco no afeto real. O ensaio gestante pode ser realizado em locações externas incríveis na região de Ibitinga e Itápolis ou em estilo lifestyle na sua própria casa. Já a fotografia newborn é realizada exclusivamente de forma residencial (home lifestyle), respeitando o ritmo, o sono e a segurança do bebê."
+  },
+  {
+    q: "Como solicitar um orçamento de fotografia e vídeo de casamento?",
+    a: "Para receber uma proposta personalizada para seu casamento, ensaio de casal, gestante, newborn ou infantil, entre em contato conosco pelo WhatsApp ou através de nossa página de contato. Atendemos ativamente noivas, gestantes e famílias em todo o interior paulista, incluindo Borborema, Tabatinga, Matão e São Carlos."
+  }
+];
+
 export default function HomeClientPage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const toggleFaq = (idx: number) => {
+    setOpenFaq(openFaq === idx ? null : idx);
+  };
   
   useEffect(() => {
     const revealObserver = new IntersectionObserver(
@@ -305,6 +334,44 @@ export default function HomeClientPage() {
               priority
             />
           </div>
+        </div>
+      </section>
+
+      <section className="faq-section" style={{ backgroundColor: "var(--bg-secondary)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
+        <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
+          <span className="section-label reveal d1">AEO & Dúvidas</span>
+          <h2 className="section-title reveal d2" style={{ margin: "1rem auto 0 auto" }}>Perguntas Frequentes</h2>
+          <p className="reveal d3" style={{ color: "var(--text-muted)", marginTop: "1rem" }}>
+            Tudo o que você precisa saber sobre nossos serviços de fotografia, vídeo e atendimento em Ibitinga, Itápolis e região.
+          </p>
+        </div>
+
+        <div className="faq-grid reveal d1" style={{ margin: "4rem auto 0 auto" }}>
+          {homeFaqs.map((faq, idx) => (
+            <div 
+              key={idx} 
+              className={`faq-item ${openFaq === idx ? "active" : ""}`}
+            >
+              <button 
+                className="faq-question-btn cursor-interactive" 
+                onClick={() => toggleFaq(idx)}
+                aria-expanded={openFaq === idx}
+              >
+                {faq.q}
+                <span>{openFaq === idx ? "−" : "+"}</span>
+              </button>
+              <div 
+                className="faq-answer"
+                style={{ 
+                  maxHeight: openFaq === idx ? "300px" : "0px",
+                  transition: "max-height 0.4s ease, padding 0.4s ease",
+                  overflow: "hidden"
+                }}
+              >
+                <p>{faq.a}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

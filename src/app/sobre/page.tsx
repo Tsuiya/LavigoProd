@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import SobreClientPage from "@/components/pages/SobreClientPage";
 
 export const metadata: Metadata = {
-  title: "Sobre Nós | Daniel & Jaiane | Lavigo Studios",
-  description: "Conheça a história de Daniel & Jaiane, fundadores da Lavigo Studios. Dedicados à fotografia e filmes de casamento, gestante e newborn na região de Ibitinga, Araraquara, Bauru e Jaú.",
-  keywords: "quem somos lavigo, fotografo daniel jaiane, historia lavigo studios, fotografia afetiva ibitinga, fotografo profissional sp, ensaio newborn jau, fotos gestante bauru",
+  title: "Sobre Nós | Daniel & Jaiane — Lavigo Studios | Fotógrafo em Ibitinga e Itápolis",
+  description: "Conheça a história de Daniel & Jaiane, fundadores da Lavigo Studios. Estúdio fotográfico boutique especializado em fotografia e filmes de casamento, gestante e newborn em Ibitinga, Itápolis e região.",
+  keywords: "daniel jaiane fotógrafo, estúdio fotográfico ibitinga, estúdio fotográfico itápolis, cinegrafista ibitinga, cinegrafista itápolis, videomaker ibitinga, videomaker itápolis, fotógrafo de casamento itápolis, fotografia de casamento ibitinga, ensaio gestante ibitinga, fotos newborn itápolis, lavigo produções, fotografia afetiva",
   openGraph: {
-    title: "Quem Somos | Daniel & Jaiane | Lavigo Studios",
-    description: "Nossa história e filosofia. Documentamos legados familiares com direção afetiva sob luz natural no interior de São Paulo.",
+    title: "Quem Somos | Daniel & Jaiane — Lavigo Studios",
+    description: "Nossa história e filosofia. Documentamos legados de casamento e família em Ibitinga, Itápolis, Araraquara, Bauru e Jaú.",
     url: "https://lavigo.com.br/sobre",
     type: "profile",
   }
@@ -30,10 +30,10 @@ export default function Page() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Quais regiões vocês atendem com fotografia e vídeo?",
+            "name": "Quais regiões vocês atendem como estúdio fotográfico, cinegrafista e videomaker?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nossa sede é em Ibitinga, SP, mas cobrimos ativamente toda a região do interior paulista (como Araraquara, Bauru, Jaú, Ribeirão Preto, São Carlos, Matão, Borborema, Itápolis, Tabatinga, Nova Europa e Gavião Peixoto). Também estamos disponíveis para viagens nacionais e casamentos fora do estado."
+              "text": "Nossa sede é em Ibitinga, SP, mas atuamos como estúdio fotográfico, videomaker e cinegrafista em todo o interior paulista, cobrindo ativamente cidades como Itápolis, Araraquara, Bauru, Jaú, Ribeirão Preto, São Carlos, Matão, Borborema, Tabatinga, Nova Europa e Gavião Peixoto."
             }
           },
           {

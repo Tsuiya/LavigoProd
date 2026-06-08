@@ -4,11 +4,11 @@ import GaleriaClientPage from "@/components/pages/GaleriaClientPage";
 
 export const metadata: Metadata = {
   title: "Galeria & Portfólio de Histórias | Lavigo Studios",
-  description: "Explore nosso portfólio real de ensaios e filmes de casamento, civil, gestante, newborn e família. Capturas sob luz natural em Ibitinga, Araraquara, Bauru, Jaú e região.",
-  keywords: "portfolio fotografo ibitinga, fotos casamento civil ibitinga, ensaio gestante fotos sp, newborn fotos jau, aniversario infantil bauru, video casamento portfolio",
+  description: "Explore nosso portfólio real de ensaios e filmes de casamento, civil, gestante, newborn e família. Fotografia e vídeo profissional em Ibitinga, Itápolis e região.",
+  keywords: "portfolio fotografo ibitinga, fotógrafo itápolis, cinegrafista ibitinga, cinegrafista itápolis, videomaker ibitinga, videomaker itápolis, estúdio fotográfico ibitinga, estúdio fotográfico itápolis, fotos casamento civil ibitinga, fotos gestante itápolis, newborn fotos ibitinga",
   openGraph: {
     title: "Galeria de Histórias Reais | Lavigo Studios",
-    description: "Nossos trabalhos fotográficos e produções audiovisuais reais. Casamentos, maternidade e ensaios no interior paulista.",
+    description: "Nossos trabalhos fotográficos e produções audiovisuais reais em Ibitinga, Itápolis e toda a região.",
     url: "https://lavigo.com.br/galeria",
     type: "website",
   }

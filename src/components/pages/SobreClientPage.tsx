@@ -9,8 +9,8 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    q: "Quais regiões vocês atendem com fotografia e vídeo?",
-    a: "Nossa sede é em Ibitinga, SP, mas cobrimos ativamente toda a região do interior paulista (como Araraquara, Bauru, Jaú, Ribeirão Preto, São Carlos, Matão, Borborema, Itápolis, Tabatinga, Nova Europa e Gavião Peixoto). Também estamos disponíveis para viagens nacionais e casamentos fora do estado."
+    q: "Quais regiões vocês atendem como estúdio fotográfico, cinegrafista e videomaker?",
+    a: "Nossa sede é em Ibitinga, SP, mas atuamos como estúdio fotográfico, videomaker e cinegrafista em todo o interior paulista, cobrindo ativamente cidades como Itápolis, Araraquara, Bauru, Jaú, Ribeirão Preto, São Carlos, Matão, Borborema, Tabatinga, Nova Europa e Gavião Peixoto."
   },
   {
     q: "Qual é o prazo de entrega das fotos e filmes?",

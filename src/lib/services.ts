@@ -113,14 +113,14 @@ export const servicesData: Record<string, ServiceData> = {
       { step: "03", title: "Revelação Digital", description: "Envio das fotos com tratamento de luz e cor cinematográfico quente." }
     ],
     gallery: [
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-13_vhji3m.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-50_ybjoew.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-56_knhqp4.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-20_qskglm.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-144_eruzjt.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-234_pm6udj.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-102_fjbb2d.webp", alt: "Ensaio de Casal (Referência Visual)" }
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-163_bqznc0.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-13_vhji3m.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-50_ybjoew.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-56_knhqp4.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-20_qskglm.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-144_eruzjt.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-234_pm6udj.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-102_fjbb2d.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-163_bqznc0.webp", alt: "Ensaio de Casal - Emily & Cristiano" }
     ]
   },
   casamentos: {

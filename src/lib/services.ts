@@ -99,7 +99,7 @@ export const servicesData: Record<string, ServiceData> = {
     price: "A partir de R$ 500",
     description: "Do ensaio íntimo ao pré-wedding. Capturamos a cumplicidade e a sintonia do casal.",
     detailDescription: "Celebrar a conexão entre duas pessoas é uma das nossas maiores inspirações. O Ensaio de Casal (seja para namorados, noivos ou pré-wedding) é conduzido de forma descontraída, como um passeio a dois onde nós registramos os olhares cúmplices, as risadas compartilhadas e os gestos de carinho silenciosos. O resultado é um acervo de imagens sinceras que mostram a essência da parceria de vocês em formato de arte visual.",
-    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1779989914/ensaio-casal1_njfnqz.webp", // Unsplash placeholder
+    coverImage: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-56_knhqp4.webp", // Unsplash placeholder
     included: [
       "Sessão de fotos de até 1h30 com troca de figurinos inclusa",
       "Locação externa exclusiva (campo, riacho ou ruínas históricas)",
@@ -113,7 +113,14 @@ export const servicesData: Record<string, ServiceData> = {
       { step: "03", title: "Revelação Digital", description: "Envio das fotos com tratamento de luz e cor cinematográfico quente." }
     ],
     gallery: [
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1779989913/ensaio-casal2_nljlor.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-13_vhji3m.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-50_ybjoew.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-56_knhqp4.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-20_qskglm.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-144_eruzjt.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-234_pm6udj.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-102_fjbb2d.webp", alt: "Ensaio de Casal (Referência Visual)" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-163_bqznc0.webp", alt: "Ensaio de Casal (Referência Visual)" }
     ]
   },
   casamentos: {

@@ -120,7 +120,8 @@ export const servicesData: Record<string, ServiceData> = {
       { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-144_eruzjt.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
       { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-234_pm6udj.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
       { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-102_fjbb2d.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
-      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-163_bqznc0.webp", alt: "Ensaio de Casal - Emily & Cristiano" }
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-163_bqznc0.webp", alt: "Ensaio de Casal - Emily & Cristiano" },
+      { src: "https://res.cloudinary.com/drczznkji/image/upload/v1781102433/E_C-68_k07lfy.webp", alt: "Ensaio de Casal - Emily & Cristiano" }
     ]
   },
   casamentos: {

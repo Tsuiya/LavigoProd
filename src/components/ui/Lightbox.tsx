@@ -8,7 +8,6 @@ interface LightboxImage {
   src: string;
   alt: string;
   tag?: string;
-  title?: string;
   category?: string;
 }
 
@@ -59,7 +58,7 @@ export default function Lightbox({
       const currentImage = images[currentIndex];
       trackViewPortfolioItem(
         currentImage.src, 
-        currentImage.title || currentImage.alt, 
+        currentImage.alt, 
         currentImage.category || "portfolio"
       );
     }
@@ -127,7 +126,6 @@ export default function Lightbox({
         />
         <div className="lightbox-caption">
           <div className="lightbox-tag">{currentImage.tag || "PORTFÓLIO"}</div>
-          <h3 className="lightbox-title">{currentImage.title || currentImage.alt}</h3>
         </div>
       </div>
     </div>,

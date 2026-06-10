@@ -8,7 +8,6 @@ interface PortfolioPhoto {
   alt: string;
   category: string;
   tag: string;
-  title: string;
 }
 
 const portfolioPhotos: PortfolioPhoto[] = [
@@ -17,51 +16,44 @@ const portfolioPhotos: PortfolioPhoto[] = [
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1776972786/LR-3_yip935.jpg",
     category: "casamento-civil",
     tag: "Larissa & Rodolfo · Civil",
-    title: "Cumplicidade",
     alt: "Noivos trocando olhares afetuosos no casamento civil em Ibitinga SP"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1776972847/LR-19_uyyde1.jpg",
     category: "casamento-civil",
     tag: "Larissa & Rodolfo · Civil",
-    title: "Abraço de amor",
     alt: "Abraço sincero dos noivos Larissa e Rodolfo no casamento civil"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1776972857/LR-1_schl7z.jpg",
     category: "casamento-civil",
     tag: "Larissa & Rodolfo · Civil",
-    title: "Assinatura do Sim",
     alt: "Noiva assinando a certidão de casamento civil no cartório de Ibitinga"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1776972786/LR-6_kdkf2b.jpg",
     category: "casamento-civil",
     tag: "Larissa & Rodolfo · Civil",
-    title: "Brinde de celebração",
     alt: "Noivos brindando o casamento civil com champagne na recepção"
   },
-  
+
   // Casamento Civil - Brenda e Danilo
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778601027/B_D-41_ka3fy6.jpg",
     category: "casamento-civil",
     tag: "Brenda & Danilo · Civil",
-    title: "Retrato Oficial",
     alt: "Retrato romântico do casamento civil de Brenda e Danilo"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778601027/B_D-39_djwg3c.jpg",
     category: "casamento-civil",
     tag: "Brenda & Danilo · Civil",
-    title: "Assinatura no Cartório",
     alt: "Noivos assinando papéis do casamento civil em cartório da região"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778601027/B_D-29_nfyw60.jpg",
     category: "casamento-civil",
     tag: "Brenda & Danilo · Civil",
-    title: "Benção e Oração",
     alt: "Noivos de mãos dadas em prece durante casamento civil"
   },
 
@@ -70,28 +62,24 @@ const portfolioPhotos: PortfolioPhoto[] = [
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990403/Still_2026-03-07_154153_2.2.2_iabvav.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
-    title: "Olhar do Altar",
     alt: "Still de filme do casamento de Camila e Sidney no altar de igreja"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.4.1_kwtaxz.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
-    title: "O Sim",
     alt: "Still cinematográfico de Camila e Sidney se unindo no altar em cerimônia premium"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990403/Still_2026-03-07_154153_2.8.1_b5otza.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
-    title: "As Alianças",
     alt: "Troca de alianças sob luz poética da igreja no interior de SP"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1779990404/Still_2026-03-07_154153_2.7.1_bwdgoj.webp",
     category: "casamento-religioso",
     tag: "Camila & Sidney · Religioso",
-    title: "A Saída dos Noivos",
     alt: "Saída dos noivos Camila e Sidney celebrando o beijo no casamento"
   },
 
@@ -100,14 +88,12 @@ const portfolioPhotos: PortfolioPhoto[] = [
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778606385/DSC03479_1_1_lubc7f.jpg",
     category: "infantil",
     tag: "Agatha · Ensaio Natal",
-    title: "Especial de Natal",
     alt: "Ensaio infantil temático de natal de Agatha em estúdio lifestyle"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778605672/agatha-66_iu4u8q.jpg",
     category: "infantil",
     tag: "Agatha · Ensaio 6 Meses",
-    title: "Descobertas na natureza",
     alt: "Ensaio infantil de Agatha com 6 meses de idade na região de Araraquara"
   },
 
@@ -116,15 +102,69 @@ const portfolioPhotos: PortfolioPhoto[] = [
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778605998/Luisa_2anos_jeblpm.jpg",
     category: "aniversario",
     tag: "Luisa · Aniversário",
-    title: "Luisa · 2 Anos",
     alt: "Retrato do aniversário de 2 anos da pequena Luisa em Ibitinga"
   },
   {
     src: "https://res.cloudinary.com/drczznkji/image/upload/v1778606157/Still_2026-05-12_141454_1.1.1_tavxdp.jpg",
     category: "aniversario",
     tag: "Luisa · Aniversário",
-    title: "Apagando as Velinhas",
     alt: "Momento dos parabéns de Luisa em sua festa infantil no interior de SP"
+  },
+
+  // Ensaio de Casal - Emily & Cristiano
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-13_vhji3m.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-50_ybjoew.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-56_knhqp4.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753082/E_C-20_qskglm.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-144_eruzjt.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-234_pm6udj.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-102_fjbb2d.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1780753083/E_C-163_bqznc0.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
+  },
+  {
+    src: "https://res.cloudinary.com/drczznkji/image/upload/v1781102433/E_C-68_k07lfy.webp",
+    category: "casais",
+    tag: "Emily & Cristiano · Casal",
+    alt: "Ensaio de Casal - Emily & Cristiano"
   }
 ];
 
@@ -170,6 +210,7 @@ export default function GaleriaClientPage() {
     { id: "todos", name: "Todos" },
     { id: "casamento-civil", name: "Casamento Civil" },
     { id: "casamento-religioso", name: "Casamento Religioso" },
+    { id: "casais", name: "Ensaio de Casal" },
     { id: "infantil", name: "Ensaio Infantil" },
     { id: "aniversario", name: "Aniversário" }
   ];
@@ -214,7 +255,6 @@ export default function GaleriaClientPage() {
               <img className="gallery-item-img" src={item.src} alt={item.alt} />
               <div className="gallery-item-overlay">
                 <span className="gallery-item-tag">{item.tag}</span>
-                <h3 className="gallery-item-title">{item.title}</h3>
               </div>
             </div>
           ))}

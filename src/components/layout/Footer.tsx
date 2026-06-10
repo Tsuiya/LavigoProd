@@ -9,7 +9,7 @@ export default function Footer() {
           <Link href="/" className="logo cursor-interactive">
             Lavigo
           </Link>
-          <p>Produtora boutique premium de fotografia e filmes de casamento, maternidade e família. Ibitinga, SP.</p>
+          <p>Estúdio fotográfico e produtora de filmes de casamento, maternidade e família. Ibitinga, SP.</p>
         </div>
 
         <div>
@@ -113,8 +113,8 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>&copy; {new Date().getFullYear()} Lavigo Produções · Todos os direitos reservados.</span>
-        <span>Orgulhosamente boutique.</span>
+        <span>&copy; {new Date().getFullYear()} Lavigo Studios · Todos os direitos reservados.</span>
+        <span>Feito com ❤️️ por Lavigo Studios.</span>
       </div>
     </footer>
   );
